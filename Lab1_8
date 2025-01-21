@@ -1,0 +1,23 @@
+print("Cześć ;) Sprawdzimy, czy jesteś pełnoletni :O")
+wiek_lata = input(f'Podaj swój wiek (w latach): ')
+
+if wiek_lata.isdigit():
+    wiek = int(wiek_lata)
+
+    if wiek < 1 or wiek > 150:
+        print("Oj bratku chyba podałeś niepoprawny wiek (zakres to 1-150 lat).")
+    else:
+        if wiek >= 18:
+            print("Jesteś pełnoletni!!!")
+        else:
+            print("Nie jesteś pełnoletni :O")
+else:
+    print("Co ty piszesz! Musisz wpisać cyfre, a nie słowo ;p")
+
+# używam funkcji if, która dosłownie znaczy jeżeli
+# # oraz else, czyli natomiast. Na popczatku pytam
+# się o wiek i deklarujemy funkcje wiek.
+# Dalej sprawdzamy wiek czy mieści się w przedziale,
+# potem sprawdzamy czy wiek jest większy czy równy 18.
+# na samym końcu piszemy else, który jeżeli ktoś napisał
+# słownie cokolwiek to wywala błąd.
